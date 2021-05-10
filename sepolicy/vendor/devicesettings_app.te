@@ -1,0 +1,3 @@
+# Allow devicesettings_app to lookup kcal_dev
+allow devicesettings_app kcal_dev:dir search;
+allow devicesettings_app kcal_dev:file rw_file_perms;
