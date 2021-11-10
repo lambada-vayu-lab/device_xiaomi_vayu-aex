@@ -33,7 +33,7 @@ import org.lineageos.settings.thermal.ThermalUtils;
 public class BootCompletedReceiver extends BroadcastReceiver implements Controller {
 
     private static final boolean DEBUG = false;
-    private static final String TAG = "XiaomiParts";
+    private static final String TAG = "DeviceParts";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
