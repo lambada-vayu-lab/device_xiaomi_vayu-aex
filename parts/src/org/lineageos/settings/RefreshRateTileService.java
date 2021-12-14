@@ -24,6 +24,8 @@ import android.service.quicksettings.TileService;
 import android.view.Display;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
@@ -51,6 +53,9 @@ public class RefreshRateTileService extends TileService {
                 m.getPhysicalHeight() == mode.getPhysicalHeight()) {
                 availableRates.add(rate);
             }
+        }
+        if (!availableRates.isEmpty()) {
+            availableRates.sort(Comparator.naturalOrder());
         }
         syncFromSettings();
     }
