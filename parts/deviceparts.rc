@@ -15,8 +15,8 @@
 
 on post-fs-data
     # Allow system to adjust haptic level directly
-    chown system system /sys/module/qti_haptics/parameters/level
-    chmod 0664 /sys/module/qti_haptics/parameters/level
+    chown system system /sys/module/qti_haptics/parameters/vmax_mv_override
+    chmod 0664 /sys/module/qti_haptics/parameters/vmax_mv_override
 
 on property:persist.deviceparts.lcd.hbm=*
     write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm ${persist.deviceparts.lcd.hbm}
