@@ -139,6 +139,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DeviceParts
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/parts/deviceparts.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/deviceparts.rc \
+    $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-parts.xml
+
 # Dex
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
