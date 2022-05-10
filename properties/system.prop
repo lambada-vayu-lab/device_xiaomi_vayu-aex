@@ -93,3 +93,6 @@ debug.sf.latch_unsignaled=1
 media.wfd.max_resolution=8
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# Disable remote keyguard animation
+persist.wm.enable_remote_keyguard_animation=0
