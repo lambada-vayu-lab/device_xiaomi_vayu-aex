@@ -163,7 +163,4 @@
     <!-- Menu -->
     <string name="kcal_presets">@string/presets_dialog_title</string>
     <string name="kcal_reset">Reset</string>
-    
-    <!-- FPS Counter -->
-    <string name="fps_info_title">FPS Counter</string>
 </resources>
